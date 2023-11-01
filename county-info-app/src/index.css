@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-select {
+  padding-right: 30px; /* Adjust the value as needed to add right-side padding */
+}

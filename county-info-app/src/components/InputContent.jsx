@@ -1,28 +1,27 @@
 import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
+
 function InputContent() {
   const [selectedRegion, setSelectedRegion] = useState("");
-  const hadleRegionChange = (e) => {
+
+  const handleRegionChange = (e) => {
     setSelectedRegion(e.target.value);
   };
+
   return (
     <div className="flex justify-between items-center">
-      {/* <div className="flex justify-between items-center bg-[E2E8F0] shadow-2xl p-5 rounded-md">
-        <BiSearch />
-        <input type="text" placeholder="Search For A County..." className="w-80 bg-[E2E8F0]"/>
-      </div> */}
-      <div className="relative flex items-center">
-      <input
-        type="text"
-        placeholder="Search"
-        className="pl-10 pr-4 py-2 w-full border border-gray-300 rounded-lg"
-      />
-      <BiSearch className="w-6 h-6 absolute left-3 text-gray-400" />
-    </div>
+      <div className="relative flex items-center shadow-md rounded-lg">
+        <input
+          type="text"
+          placeholder="Search"
+          className="pl-10 pr-4 py-2 w-72 text-lg border border-gray-300 rounded-lg"
+        />
+        <BiSearch className="w-6 h-6 absolute left-3 text-gray-400" />
+      </div>
       <select
         value={selectedRegion}
-        onChange={hadleRegionChange}
-        className="bg-slate-200 p-4  rounded-md shadow-lg"
+        onChange={handleRegionChange}
+        className="flex p-4 rounded-md shadow-md" // Add pr-10 for right-side padding
       >
         <option disabled value="" className="mt-28">
           Filter By Region
