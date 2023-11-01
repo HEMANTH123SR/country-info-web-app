@@ -1,12 +1,12 @@
 import React from "react";
 
-function Card({region,imgSrc,captial,populationCount,countryName}) {
+function Card({region,imgSrc,captial,populationCount,countryName,alt}) {
   return (
     <div className="shadow-lg rounded-lg m-5" style={{ width: 250, height: 310 }}>
       <img
         className="rounded-lg"
         src={`${imgSrc}`}
-        alt="country image"
+        alt={`${alt}`}
         width={"250"}
         height={"300"}
       />
