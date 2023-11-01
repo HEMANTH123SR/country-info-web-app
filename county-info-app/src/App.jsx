@@ -1,9 +1,11 @@
 import Header from "./components/Header"
+import Home from "./components/Home"
 
 const App=()=>{
   return(
-    <div>
+    <div style={{backgroundColor:"#FAFAFA"}}>
    <Header/>
+   <Home/>
     </div>
   )
 }

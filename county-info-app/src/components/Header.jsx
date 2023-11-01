@@ -5,10 +5,10 @@ function Header() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
-    <div
+    <header
       className={`${
         isDarkMode ? "bg-gray-800" : "bg-slate-300"
-      } h-16 flex flex-row items-center justify-between px-20`}
+      } h-16 flex flex-row items-center justify-between px-20 shadow-2xl`}
     >
       <h1
         className={`${isDarkMode ? "text-slate-300" : "text-gray-700"} 
@@ -25,7 +25,7 @@ function Header() {
       >
         <BsMoonFill className="mr-2" /> {`${isDarkMode ? "Light Mode" : "Dark Mode"}`}
       </button>
-    </div>
+    </header>
   );
 }
 
